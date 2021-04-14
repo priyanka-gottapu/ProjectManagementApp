@@ -1,0 +1,15 @@
+{% extends 'books/library.html' %}
+{% block content %}
+<center>
+    <h1 color:#0a0a0a;>Create New Project</h1><br>
+    <form method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        <table border="6" >
+            <tr>
+                <p>{{upload_form}}</p><br>
+            </tr>
+        </table><br>
+        <button type="submit" class="btn btn-lg btn-warning">Submit</button>
+    </form>
+</center>
+{% endblock %}

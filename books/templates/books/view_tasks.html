@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+        {% block content %}
+        <div>
+            {% for books in shelf1 %}
+                <h5>{{books.name}}</h5>
+                <p>{{books.describe}}</p>                        
+        </div>
+            {% endfor %}
+        {% endblock %}
+    
+</html>
